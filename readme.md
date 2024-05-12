@@ -3,10 +3,10 @@
 ## TL;DR
 
 ```typescript
-import { chungen } from 'chungen'
+import { chunks } from 'chungen'
 
 const response = await fetch('https://example.com/chunked/')
 
-for await (const chunk of chungen(response))
+for await (const chunk of chunks(response))
   console.log(chunk)
 ```

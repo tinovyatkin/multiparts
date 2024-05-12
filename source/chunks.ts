@@ -1,4 +1,4 @@
-export function * chungen (response: Response) {
+export function * chunks (response: Response) {
   const te = response.headers.get('transfer-encoding')
 
   if (te === null || te !== 'chunked')
@@ -6,5 +6,4 @@ export function * chungen (response: Response) {
 
   const reader = response.body!.getReader()
   const decoder = new TextDecoder()
-
 }
