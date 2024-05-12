@@ -1,0 +1,29 @@
+{
+  "name": "chungen",
+  "version": "0.0.1",
+  "description": "Chunked encoding generator",
+  "keywords": [
+    "http",
+    "chunked-encoding"
+  ],
+  "main": "transpiled/chit.js",
+  "types": "transpiled/chit.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toa-io/err.git"
+  },
+  "bugs": {
+    "url": "https://github.com/toa-io/err/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "author": "temich <tema.gurtovoy@gmail.com>",
+  "license": "MIT"
+}
