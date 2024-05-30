@@ -10,9 +10,9 @@
   "engines": {
     "node": ">=20.11"
   },
-  "main": "dist/index.js",
+  "main": "build/index.js",
   "type": "module",
-  "types": "dist/index.d.ts",
+  "types": "build/index.d.ts",
   "files": [
     "build/",
     "!*.tsbuildinfo"
