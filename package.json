@@ -1,29 +1,57 @@
 {
-  "name": "chungen",
+  "name": "http-multiparts",
   "version": "0.0.2",
-  "description": "Chunked encoding generator",
+  "description": "Multipart response handling library",
   "keywords": [
     "http",
-    "chunked-encoding"
+    "chunked-encoding",
+    "multipart"
   ],
-  "main": "transpiled/chunks.js",
-  "types": "transpiled/chunks.d.ts",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "main": "dist/index.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "files": [
+    "build/",
+    "!*.tsbuildinfo"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/toa-io/chungen.git"
+    "url": "git+https://github.com/toa-io/multiparts.git"
   },
   "bugs": {
-    "url": "https://github.com/toa-io/chungen/issues"
+    "url": "https://github.com/toa-io/multiparts/issues"
   },
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "test": "jest"
+    "test": "playwright test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "prepublishOnly": "tsc"
   },
-  "peerDependencies": {
-    "typescript": "^5.2.2"
+  "devDependencies": {
+    "@eslint/js": "^9.3.0",
+    "@homer0/prettier-plugin-jsdoc": "^9.0.2",
+    "@playwright/test": "^1.44.1",
+    "@types/content-type": "^1.1.8",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^20.12.13",
+    "esbuild": "^0.21.4",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.11.0"
   },
   "author": "temich <tema.gurtovoy@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "content-type": "^1.0.5",
+    "multipart-related": "^2.0.0"
+  }
 }

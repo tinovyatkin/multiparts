@@ -1,0 +1,5 @@
+endOfLine: lf
+plugins:
+  - '@homer0/prettier-plugin-jsdoc'
+  - prettier-plugin-organize-imports
+singleQuote: true

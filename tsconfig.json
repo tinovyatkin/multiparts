@@ -1,21 +1,20 @@
 {
   "compilerOptions": {
-    "outDir": "./transpiled",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "target": "ESNext",
+    "outDir": "./build",
+    "module": "es2022",
+    "moduleResolution": "Bundler",
+    "target": "es2022",
+    "lib": ["ESNext", "es2022", "DOM", "DOM.Iterable"],
     "sourceMap": true,
     "declaration": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "incremental": true,
     "strict": true,
-    "experimentalDecorators": true,
+    "experimentalDecorators": false,
     "noImplicitOverride": true,
-    "allowJs": true,
+    "allowJs": false,
     "forceConsistentCasingInFileNames": true
   },
-  "exclude": [
-    "**/transpiled"
-  ]
+  "include": ["source"]
 }
