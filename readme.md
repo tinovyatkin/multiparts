@@ -1,9 +1,9 @@
-# Chunked encoding generator
+# Multipart response text chunks generator
 
 ## TL;DR
 
 ```typescript
-import { chunks } from 'chungen'
+import { chunks } from 'multigen'
 
 const response = await fetch('https://example.com/chunked/')
 

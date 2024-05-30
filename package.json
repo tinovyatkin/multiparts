@@ -1,9 +1,10 @@
 {
-  "name": "chungen",
-  "version": "0.0.2",
-  "description": "Chunked encoding generator",
+  "name": "multigen",
+  "version": "0.0.1",
+  "description": "Multipart response chunks generator",
   "keywords": [
     "http",
+    "multipart",
     "chunked-encoding"
   ],
   "main": "transpiled/chunks.js",
@@ -19,11 +20,24 @@
     "access": "public"
   },
   "scripts": {
+    "prepublishOnly": "rm -rf transpiled && npx tsc",
     "test": "jest"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
   },
   "peerDependencies": {
     "typescript": "^5.2.2"
   },
   "author": "temich <tema.gurtovoy@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/content-type": "^1.1.8",
+    "@types/jest": "^29.5.12",
+    "ts-jest": "^29.1.4"
+  },
+  "dependencies": {
+    "content-type": "^1.0.5"
+  }
 }
