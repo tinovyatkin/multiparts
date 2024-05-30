@@ -1,6 +1,6 @@
-# Multipart response text chunks generator
+# Multipart response text chunks
 
-## TL;DR
+## As a Generator
 
 ```typescript
 import { chunks } from 'http-multiparts'

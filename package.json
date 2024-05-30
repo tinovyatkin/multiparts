@@ -1,7 +1,7 @@
 {
   "name": "http-multiparts",
   "version": "0.0.1",
-  "description": "Multipart response chunks generator",
+  "description": "Multipart response text chunks",
   "keywords": [
     "http",
     "multipart",
