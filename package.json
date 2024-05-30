@@ -11,10 +11,10 @@
   "types": "transpiled/chunks.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/toa-io/chungen.git"
+    "url": "git+https://github.com/toa-io/multiparts.git"
   },
   "bugs": {
-    "url": "https://github.com/toa-io/chungen/issues"
+    "url": "https://github.com/toa-io/multiparts/issues"
   },
   "publishConfig": {
     "access": "public"
