@@ -41,12 +41,13 @@ it('should return generator', async () => {
   const words = []
 
   for await (const chunk of chunks(response))
-    words.push(chunk.toString())
+    words.push(chunk)
 
   expect(words).toEqual(['Hello', 'world', '!'])
 })
 
 async function* gen (){
+  yield boundary
   yield 'Hello' + boundary
   yield 'world' + boundary
 

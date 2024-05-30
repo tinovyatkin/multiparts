@@ -18,6 +18,7 @@ export async function * chunks (response: Response): AsyncGenerator<string> {
   const reader = response.body!.getReader()
   const decoder = new TextDecoder()
 
+  let started = false
   let buffer = ''
 
   while (true) {
@@ -33,8 +34,10 @@ export async function * chunks (response: Response): AsyncGenerator<string> {
 
     const parts = buffer.split(cut)
 
-    for (let i = 0; i < parts.length - 1; i++)
-      yield parts[i]
+    for (let i = 0; i < parts.length - 1; i++) {
+      if (started) yield parts[i] // stream starts with boundary
+      else started = true
+    }
 
     buffer = parts[parts.length - 1]
 
