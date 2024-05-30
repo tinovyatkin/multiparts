@@ -3,9 +3,9 @@
 ## TL;DR
 
 ```typescript
-import { chunks } from 'multigen'
+import { chunks } from 'http-multiparts'
 
-const response = await fetch('https://example.com/chunked/')
+const response = await fetch('https://example.com/multipart/')
 
 for await (const chunk of chunks(response))
   console.log(chunk)
